@@ -6,6 +6,12 @@
     "start": "ng serve ",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "format-lib:check": "prettier --check \"projects/carousel/**/*.{ts,js,json,html,scss}\"",
+    "format-showcase:check": "prettier --check \"projects/carousel-showcase/**/*.{ts,js,json,html,scss}\"",
+    "format:check": "npm run format-lib:check && npm run format-showcase:check",
+    "format-lib:write": "prettier --write \"projects/carousel/**/*.{ts,js,json,html,scss}\"",
+    "format-showcase:write": "prettier --write \"projects/carousel-showcase/**/*.{ts,js,json,html,scss}\"",
+    "format:write": "npm run format-lib:write && npm run format-showcase:write",
     "test": "ng test",
     "serve:ssr:carousel-showcase": "node dist/carousel-showcase/server/server.mjs"
   },
@@ -40,6 +46,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^17.0.0",
+    "prettier": "^3.1.0",
     "typescript": "~5.2.2"
   }
 }
