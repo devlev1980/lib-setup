@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve ",
-    "build": "ng build",
+    "build:lib": "ng build carousel",
+    "buid:lib:watch": "ng build carousel --watch",
+    "build:showcase": "ng build carousel-showcase --prod",
+    "build": "npm run build:lib && npm run build:showcase",
+    "postbuild:lib": "cp README.md dist/carousel/README.md && cp LICENSE.md dist/carousel/LICENSE.md",
     "watch": "ng build --watch --configuration development",
     "format-lib:check": "prettier --check \"projects/carousel/**/*.{ts,js,json,html,scss}\"",
     "format-showcase:check": "prettier --check \"projects/carousel-showcase/**/*.{ts,js,json,html,scss}\"",
@@ -12,6 +16,7 @@
     "format-lib:write": "prettier --write \"projects/carousel/**/*.{ts,js,json,html,scss}\"",
     "format-showcase:write": "prettier --write \"projects/carousel-showcase/**/*.{ts,js,json,html,scss}\"",
     "format:write": "npm run format-lib:write && npm run format-showcase:write",
+    "generate:toc": "npx doctoc README.md",
     "test": "ng test",
     "serve:ssr:carousel-showcase": "node dist/carousel-showcase/server/server.mjs"
   },
