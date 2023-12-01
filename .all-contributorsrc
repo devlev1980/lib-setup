@@ -1,5 +1,5 @@
 {
-  "projectName": "lib-setup",
+  "projectName": "Lib-setup",
   "projectOwner": "Yevgeny Levin",
   "repoType": "github",
   "repoHost": "https://github.com",
@@ -16,7 +16,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/22892817?v=4",
       "profile": "https://github.com/devlev1980",
       "contributions": [
-        "code"
+        "code",
+        "doc",
+        "bug"
       ]
     }
   ],
