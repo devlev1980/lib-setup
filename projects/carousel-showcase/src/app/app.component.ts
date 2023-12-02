@@ -10,6 +10,4 @@ import { CarouselComponent } from '../../../carousel/src/lib/carousel.component'
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'carousel-showcase';
-}
+export class AppComponent {}
