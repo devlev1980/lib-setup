@@ -26,12 +26,12 @@
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
+
           "options": {
             "tsConfig": "projects/carousel/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "browsers": "ChromeHeadless",
+            "watch": false,
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -53,18 +53,14 @@
             "outputPath": "dist/carousel-showcase",
             "index": "projects/carousel-showcase/src/index.html",
             "browser": "projects/carousel-showcase/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/carousel-showcase/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/carousel-showcase/src/favicon.ico",
               "projects/carousel-showcase/src/assets"
             ],
-            "styles": [
-              "projects/carousel-showcase/src/styles.scss"
-            ],
+            "styles": ["projects/carousel-showcase/src/styles.scss"],
             "scripts": [],
             "server": "projects/carousel-showcase/src/main.server.ts",
             "prerender": true,
@@ -117,19 +113,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/carousel-showcase/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/carousel-showcase/src/favicon.ico",
               "projects/carousel-showcase/src/assets"
             ],
-            "styles": [
-              "projects/carousel-showcase/src/styles.scss"
-            ],
+            "styles": ["projects/carousel-showcase/src/styles.scss"],
             "scripts": []
           }
         }
