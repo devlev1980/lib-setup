@@ -1,21 +1,22 @@
-
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## YL-lib-carousel
 
 This is the demo project that shows how release library to npm.
 
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [YL-lib-carousel](#yl-lib-carousel)
-- [Getting started](#getting-started)
+- [Installation](#installation)
 - [Usage](#usage)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -24,9 +25,7 @@ This is the demo project that shows how release library to npm.
 
 `
 
-``
-  npm install yl-lib-carousel
-``
+`  npm install yl-lib-carousel`
 
 ## Usage
 
@@ -36,8 +35,8 @@ import { Carousel } from 'yl-lib-carousel';
 @Component({
   selector: 'my-component',
   template: `
-  <yl-lib-carousel /> 
-  [items]="items" 
+  <yl-lib-carousel />
+  [items]="items"
   [config]="config">
   </<yl-lib-carousel />
   `,
@@ -80,3 +79,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+```
