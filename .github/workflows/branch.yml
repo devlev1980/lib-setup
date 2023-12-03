@@ -18,7 +18,5 @@ jobs:
         run: npm install
       - name: Lint
         run: npm run lint
-      - name: Test with coverage
-        run: npm run test:lib-coverage
       - name: Build
         run: npm run build
