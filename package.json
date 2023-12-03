@@ -6,7 +6,7 @@
     "start": "ng serve ",
     "build:lib": "ng build carousel",
     "buid:lib:watch": "ng build carousel --watch",
-    "build:showcase": "ng build carousel-showcase --prod",
+    "build:showcase": "ng build carousel-showcase",
     "build": "npm run build:lib && npm run build:showcase",
     "postbuild:lib": "npm run generate:toc && cp README.md dist/carousel/README.md && cp LICENSE.md dist/carousel/LICENSE.md",
     "watch": "ng build --watch --configuration development",
